@@ -845,7 +845,7 @@ input {
     width: 18px;
     height: 18px;
     left: 2px;
-    bottom: -3px;
+    bottom: 0px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
