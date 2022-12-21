@@ -336,7 +336,7 @@ input {
 @media(max-width:767px) {
     .page .content .wrapper .user-img img {
         left: 50%;
-        top: 45px;
+        top: 95px;
         transform: translatex(-50%);
         -webkit-transform: translatex(-50%);
         -moz-transform: translatex(-50%);
@@ -478,10 +478,16 @@ input {
     padding: 20px;
 }
 
+
 .page .content .wrapper .yearly-targets .content .money i {
     background-color: #cce3ff;
     color: var(--blue-color);
 }
+
+.page .content .wrapper .yearly-targets .content .money i {
+    display: flex;
+}
+
 
 .page .content .wrapper .yearly-targets .content .project i {
     background-color: #fdecce;
@@ -497,6 +503,7 @@ input {
     font-weight: normal;
     font-size: 17px;
 }
+
 
 .wrapper .yearly-targets .money .progress {
     height: 3px;
@@ -520,6 +527,12 @@ input {
     height: 3px;
     background-color: blue;
 
+}
+
+@media(max-width:767px) {
+    .wrapper .yearly-targets .progress>span span {
+        display: none;
+    }
 }
 
 .wrapper .yearly-targets .money .progress>span span {
@@ -661,6 +674,14 @@ input {
 
 /* end tickets */
 /* start latest news */
+@media(max-width:767px) {
+    .wrapper .latest-news .content .news {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+
 .wrapper .latest-news .content .news:not(:last-child) {
     border-bottom: 1px solid var(--alt-gray-color);
 }
@@ -1158,6 +1179,12 @@ input {
 
 .general-info span a {
     color: var(--blue-color);
+}
+
+@media(max-width:767px) {
+    .settings .servers {
+        flex-direction: column;
+    }
 }
 
 /* end setting page */
